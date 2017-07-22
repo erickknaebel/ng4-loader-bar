@@ -1,5 +1,6 @@
 # Angular(v4) component that shows a loading bar at the top of a component or module
 
+[![Build Status](https://travis-ci.org/https://travis-ci.org/erickknaebel/ng4-loader-bar.svg?branch=master)](https://travis-ci.org/erickknaebel/ng4-loader-bar.svg?branch=master)
 
 ## Installation
 ```sh
