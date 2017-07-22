@@ -1,12 +1,3 @@
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 import { Injectable } from '@angular/core';
 import { isPresent } from './ng4-loader-bar.utility';
 import { Subject } from 'rxjs/Subject';
@@ -18,15 +9,14 @@ export var AngularLoadingBarEventType;
     AngularLoadingBarEventType[AngularLoadingBarEventType["VISIBLE"] = 3] = "VISIBLE";
     AngularLoadingBarEventType[AngularLoadingBarEventType["COMPLETE"] = 4] = "COMPLETE";
 })(AngularLoadingBarEventType || (AngularLoadingBarEventType = {}));
-var AngularLoadingBarEvent = (function () {
+export var AngularLoadingBarEvent = (function () {
     function AngularLoadingBarEvent(type, value) {
         this.type = type;
         this.value = value;
     }
     return AngularLoadingBarEvent;
 }());
-export { AngularLoadingBarEvent };
-var AngularLoadingBarService = (function () {
+export var AngularLoadingBarService = (function () {
     function AngularLoadingBarService() {
         this._progress = 0;
         this._height = '2px';
@@ -150,10 +140,10 @@ var AngularLoadingBarService = (function () {
     AngularLoadingBarService.prototype.getRandom = function (min, max) {
         return Math.random() * (min - max);
     };
+    AngularLoadingBarService.decorators = [
+        { type: Injectable },
+    ];
+    /** @nocollapse */
+    AngularLoadingBarService.ctorParameters = function () { return []; };
     return AngularLoadingBarService;
 }());
-AngularLoadingBarService = __decorate([
-    Injectable(),
-    __metadata("design:paramtypes", [])
-], AngularLoadingBarService);
-export { AngularLoadingBarService };
