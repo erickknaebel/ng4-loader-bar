@@ -1,6 +1,11 @@
 # Angular(v4) component that shows a loading bar at the top of a component or module
 
-[![Build Status](https://travis-ci.org/https://travis-ci.org/erickknaebel/ng4-loader-bar.svg?branch=master)](https://travis-ci.org/erickknaebel/ng4-loader-bar.svg?branch=master)
+[![Build Status](https://travis-ci.org/https://travis-ci.org/erickknaebel/ng4-loader-bar.svg?branch=master)](https://travis-ci.org/erickknaebel/ng4-loader-bar)
+[![dependencies Status](https://david-dm.org/erickknaebel/ng4-loader-bar/status.svg)](https://david-dm.org/erickknaebel/ng4-loader-bar)
+[![devDependencies Status](https://david-dm.org/erickknaebel/ng4-loader-bar/dev-status.svg)](https://david-dm.org/erickknaebel/ng4-loader-bar?type=dev)
+[![peerDependencies Status](https://david-dm.org/erickknaebel/ng4-loader-bar/peer-status.svg)](https://david-dm.org/erickknaebel/ng4-loader-bar?type=peer)
+[![Known Vulnerabilities](https://snyk.io/test/github/erickknaebel/ng4-loader-bar/badge.svg)](https://snyk.io/test/github/erickknaebel/ng4-loader-bar)
+
 
 ## Installation
 ```sh
