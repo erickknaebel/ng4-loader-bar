@@ -1,7 +1,7 @@
 {
   "name": "ng4-loader-bar",
   "description": "Angular component that shows a loading bar at the top of a component or module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "test": "karma start",
     "test-watch": "tsc && karma start --no-single-run --auto-watch",
