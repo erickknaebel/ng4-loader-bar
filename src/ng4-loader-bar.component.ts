@@ -3,7 +3,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { isPresent } from "./ng4-loader-bar.utility";
 
 @Component({
-  selector: 'ng4-loader-barr',
+  selector: 'ng4-loader-bar',
   template: `
   <div class="ng4-loader-bar">
     <div class="ng4-loader-bar-progress"
