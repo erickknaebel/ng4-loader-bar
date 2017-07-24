@@ -7,7 +7,6 @@ import { isPresent } from "./ng4-loader-bar.utility";
   template: `
   <div class="ng4-loader-bar">
     <div class="ng4-loader-bar-progress"
-    [ngClass]="{'animation' : animate}"
     [style.width]="progress + '%'"
     [style.backgroundColor]="color"
     [style.color]="color"
@@ -18,8 +17,6 @@ import { isPresent } from "./ng4-loader-bar.utility";
   styles: []
 })
 export class AngularLoadingBarComponent implements OnInit {
-
-  public animate = true;
 
   @Input() progress: string = '0';
   @Input() color: string = 'red';
@@ -38,8 +35,6 @@ export class AngularLoadingBarComponent implements OnInit {
         this.height = event.value;
       } else if (event.type === AngularLoadingBarEventType.VISIBLE) {
         this.show = event.value;
-      } else if (event.type === AngularLoadingBarEventType.COMPLETE && isPresent(event.value)) {
-        this.animate = false;
       }
     });
   }
