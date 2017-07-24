@@ -25,6 +25,13 @@ System.config({
 
 #### Update your application/web page with the following markup
 - Import the `style.css` into your web page or app.
+
+```json
+ "styles": [
+    "../node_modules/ng4-loader-bar/bundles/style.css"
+ ]
+```
+
 - Add the `<ng4-loader-bar></ng4-loader-bar>` component tag within the component you want the loading bar to appear:
 
 ```html

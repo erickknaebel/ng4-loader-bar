@@ -4,7 +4,6 @@ import { isPresent } from "./ng4-loader-bar.utility";
 export var AngularLoadingBarComponent = (function () {
     function AngularLoadingBarComponent(service) {
         this.service = service;
-        this.animate = true;
         this.progress = '0';
         this.color = 'red';
         this.height = '2px';
@@ -25,15 +24,12 @@ export var AngularLoadingBarComponent = (function () {
             else if (event.type === AngularLoadingBarEventType.VISIBLE) {
                 _this.show = event.value;
             }
-            else if (event.type === AngularLoadingBarEventType.COMPLETE && isPresent(event.value)) {
-                _this.animate = false;
-            }
         });
     };
     AngularLoadingBarComponent.decorators = [
         { type: Component, args: [{
-                    selector: 'ng4-loader-barr',
-                    template: "\n  <div class=\"ng4-loader-bar\">\n    <div class=\"ng4-loader-bar-progress\"\n    [ngClass]=\"{'animation' : animate}\"\n    [style.width]=\"progress + '%'\"\n    [style.backgroundColor]=\"color\"\n    [style.color]=\"color\"\n    [style.height]=\"height\"\n    [style.opacity]=\"show ? '1' : '0'\"></div>\n  </div>  \n  ",
+                    selector: 'ng4-loader-bar',
+                    template: "\n  <div class=\"ng4-loader-bar\">\n    <div class=\"ng4-loader-bar-progress\"\n    [style.width]=\"progress + '%'\"\n    [style.backgroundColor]=\"color\"\n    [style.color]=\"color\"\n    [style.height]=\"height\"\n    [style.opacity]=\"show ? '1' : '0'\"></div>\n  </div>  \n  ",
                     styles: []
                 },] },
     ];

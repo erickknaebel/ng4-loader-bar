@@ -279,7 +279,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var AngularLoadingBarComponent = (function () {
     function AngularLoadingBarComponent(service) {
         this.service = service;
-        this.animate = true;
         this.progress = '0';
         this.color = 'red';
         this.height = '2px';
@@ -299,9 +298,6 @@ var AngularLoadingBarComponent = (function () {
             }
             else if (event.type === __WEBPACK_IMPORTED_MODULE_0__ng4_loader_bar_service__["a" /* AngularLoadingBarEventType */].VISIBLE) {
                 _this.show = event.value;
-            }
-            else if (event.type === __WEBPACK_IMPORTED_MODULE_0__ng4_loader_bar_service__["a" /* AngularLoadingBarEventType */].COMPLETE && __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__ng4_loader_bar_utility__["a" /* isPresent */])(event.value)) {
-                _this.animate = false;
             }
         });
     };
@@ -323,8 +319,8 @@ var AngularLoadingBarComponent = (function () {
     ], AngularLoadingBarComponent.prototype, "show", void 0);
     AngularLoadingBarComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Component"])({
-            selector: 'ng4-loader-barr',
-            template: "\n  <div class=\"ng4-loader-bar\">\n    <div class=\"ng4-loader-bar-progress\"\n    [ngClass]=\"{'animation' : animate}\"\n    [style.width]=\"progress + '%'\"\n    [style.backgroundColor]=\"color\"\n    [style.color]=\"color\"\n    [style.height]=\"height\"\n    [style.opacity]=\"show ? '1' : '0'\"></div>\n  </div>  \n  ",
+            selector: 'ng4-loader-bar',
+            template: "\n  <div class=\"ng4-loader-bar\">\n    <div class=\"ng4-loader-bar-progress\"\n    [style.width]=\"progress + '%'\"\n    [style.backgroundColor]=\"color\"\n    [style.color]=\"color\"\n    [style.height]=\"height\"\n    [style.opacity]=\"show ? '1' : '0'\"></div>\n  </div>  \n  ",
             styles: []
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__ng4_loader_bar_service__["c" /* AngularLoadingBarService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_0__ng4_loader_bar_service__["c" /* AngularLoadingBarService */]) === 'function' && _a) || Object])

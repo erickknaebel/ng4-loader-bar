@@ -2,7 +2,6 @@ import { AngularLoadingBarService } from './ng4-loader-bar.service';
 import { OnInit } from '@angular/core';
 export declare class AngularLoadingBarComponent implements OnInit {
     service: AngularLoadingBarService;
-    animate: boolean;
     progress: string;
     color: string;
     height: string;

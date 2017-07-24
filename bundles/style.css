@@ -1,7 +1,7 @@
 /*!
  * Copyright (C) 2017 ESKMedia
  * This project is licensed under the terms of the MIT license.
- * https://github.com/erickknaebel/ng4-loader-bar
+ * https://github.com/erickknaebel/angular4-loader-bar
  */
 
 
@@ -17,7 +17,7 @@
 }
 
 /* Styling for the Slim Loading Progress Bar itself */
-.ng4-loader-bar-progress {
+.ng4-loader-progress {
     margin: 0;
     padding: 0;
     z-index: 99998;
