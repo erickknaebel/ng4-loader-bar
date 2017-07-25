@@ -12,7 +12,7 @@
 npm install ng4-loader-bar --save
 ```
 
-### Usage
+## Usage
 Using SystemJS to load your files may require a update to your config:
 
 ```js
@@ -23,7 +23,7 @@ System.config({
 });
 ```
 
-#### Update your application/web page with the following markup
+### Update your application/web page with the following markup
 - Import the `style.css` into your web page or app.
 
 ```json
@@ -42,11 +42,17 @@ System.config({
 </div>
 ```
 
-#### Import `AngularLoadingBarModule`
+The default styles are:
+```css
+color: 'red';
+height: '2px';
+```
+
+
+### Import `AngularLoadingBarModule`
 Import `AngularLoadingBarModule.forRoot()` in the NgModule of your application.
 
 ```ts
-import {BrowserModule} from "@angular/platform-browser";
 import {NgModule} from '@angular/core';
 import {AngularLoadingBarModule} from 'ng4-loader-bar';
 
@@ -75,7 +81,7 @@ export class SharedModule {
 }
 ```
 
-#### Using `AngularLoadingBarService` in your Angular application
+### Using `AngularLoadingBarService` in your Angular application
 - Import `AngularLoadingBarService` from `ng4-loader-bar`(within your node_modules directory) into your component code:
 
 ```js
@@ -86,9 +92,9 @@ import {AngularLoadingBarService} from 'ng4-loader-bar';
     selector: 'app',
     template: `
         <div>Hello world</div>
-        <button (click)="startLoading()">Start Loading</button>
-        <button (click)="stopLoading()">Stop Loading</button>
-        <button (click)="completeLoading()">Complete Loading</button>
+        <button (click)="startLoadingBar()">Start Loading</button>
+        <button (click)="stopLoadingBar()">Stop Loading</button>
+        <button (click)="completeLoadingBar()">Complete Loading</button>
         <ng4-loader-bar></ng4-loader-bar>
     `
 })
@@ -109,7 +115,8 @@ export class AppComponent {
     }
 }
 ```
-#### Customize the `ng4-loader-bar` to tailor to your application
+
+### Customize the `ng4-loader-bar` to tailor to your application
 
 Example: 
 `<ng4-loader-bar [color]="'green'" [height]="'6px'"></ng4-loader-bar>`
